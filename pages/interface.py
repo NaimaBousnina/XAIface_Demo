@@ -1,0 +1,315 @@
+import streamlit as st
+from PIL import Image
+import pandas as pd
+import streamlit_pandas as sp
+
+st.set_page_config(layout="wide")
+st.markdown("""
+<style>
+.css-18ni7ap.e8zbici2
+{
+margin-top:-50px;    
+}
+
+.css-164nlkn.egzxvld1
+{
+visibility: hidden;
+}
+
+.css-1v0mbdj.etr89bj1 /* left image */
+{
+text-align: center;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: -90px;
+width: 100%;
+}
+
+.css-1xtoq5p.e1fqkh3o2
+{
+visibility: hidden;  
+}
+
+.css-wjbhl0.e1fqkh3o9
+{
+margin-top: -100px;
+visibility: hidden;  
+}
+
+.css-1s3y5qe.e1fqkh3o8
+{
+visibility: hidden;  
+}
+
+.css-1629p8f.e16nr0p31
+{
+ margin-top: -120px;   
+}
+
+.block-container.css-k1ih3n.egzxvld4
+{
+height:100%;
+}
+
+.css-qcqlej.egzxvld3
+{
+margin-top: -500px;  
+}
+
+.element-container.css-1ble31s.e1tzin5v3
+{
+margin-top: 20px; 
+#background-color: red;
+}
+</style>
+
+""", unsafe_allow_html = True)
+
+def jarab():
+    if st.session_state['face beautification or face coding'] == "Face Beautification":
+        st.session_state['face coding tool'] = "None"
+
+    if st.session_state['face beautification or face coding'] == "Face Coding":
+        st.session_state['face beautification tool'] = "None"
+
+    if st.session_state['face beautification or face coding'] == "None":
+        st.session_state['face beautification tool'] = "None"
+        st.session_state['face coding tool'] = "None"
+
+    
+
+@st.cache_data
+def load_data():
+    df = pd.read_csv("DATASET/Book.csv", dtype=str)
+    return df
+
+df = load_data()
+#st.write(df)
+
+create_data = {"Probe-gallery Pair ID": "select",
+                "Face Beautification or Face Coding": "select",
+                "Face Beautification Tool": "select",
+                "Face Coding Tool": "select",
+                "Face Verification Tool": "select",
+                "Explainability Tool": "select"}
+
+# Creat the sidebar with the desired widgets
+all_widgets = sp.create_widgets(df, create_data, ignore_columns=["Probe_img_path", "Gallery_img_path", 
+                                                                 "Comparison Type", "Original Score", 
+                                                                 "Decision Threshold", "Original Decision",
+                                                                 "Filtred_probe_img_path", 
+                                                                 "Decision After Beautification", 
+                                                                 "Decoded_probe_img_path", "Score After Coding",
+                                                                 "Similar_region_HM_path", "Score After Beautification",
+                                                                 "Decision After Coding", "Decision Type", 
+                                                                 "Explainability Map", "PSNR-YUV", "MS-SSIM"], on_change=jarab)
+
+# Filter the dataframe according to the user's selections
+res = sp.filter_df(df, all_widgets)
+#st.write(res)
+
+
+####
+# Containers generation
+st.markdown(""" """)
+st.markdown(""" """)
+first_container = st.container()
+st.markdown("""<hr style="height:1px;color:#F8F8F8; margin-top: -5px" /> """, unsafe_allow_html=True)
+second_container = st.container()
+
+
+# Containers building
+with first_container:
+    col1, col2 = st.columns(2)
+    with col1:
+        st.markdown("<h6 style='margin-top: -135px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Gallery Image</h6>", unsafe_allow_html=True)
+        probe_img_path = res["Gallery_img_path"]
+        probe_img_path = probe_img_path.tolist()[0]
+        image = Image.open(probe_img_path.strip('\"'))
+        image = image.resize((350, 350))
+        st.image(image)
+
+    with col2:
+        st.markdown("<h6 style='margin-top: -135px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px;'>Face Verification Set Up</h6>", unsafe_allow_html=True)
+        recognition_tool = res["Face Verification Tool"]
+        recognition_tool = recognition_tool.tolist()[0]
+
+        comparison_type = res["Comparison Type"]
+        comparison_type = comparison_type.tolist()[0]
+
+        decision_thresh = res["Decision Threshold"]
+        decision_thresh = decision_thresh.tolist()[0]
+
+        contain_1 = st.container()
+        contain_3 = st.container()
+
+        with contain_1:
+            st.markdown(f"<h6 style='margin-top: 110px; text-align: center;float:left; margin-left: 174px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:DarkBlue; border-radius: 5px 5px;'> Face Verification Tool </h6> <h6 style='margin-top: 110px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:Aqua; border-radius: 5px 5px; margin-right:183px;'>{recognition_tool}</h6>", unsafe_allow_html=True)
+        with contain_3:
+            st.markdown(f"<h6 style='margin-top: 120px; text-align: center;float:left; margin-left: 174px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:DarkBlue; border-radius: 5px 5px;'> Decision Threshold </h6> <h6 style='margin-top: 120px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:Aqua; border-radius: 5px 5px; margin-right:183px;'>{decision_thresh}</h6>", unsafe_allow_html=True)
+
+with second_container:
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+
+        ori_score = res["Original Score"]
+        ori_score = ori_score.tolist()[0]
+
+        ori_decision = res["Original Decision"]
+        ori_decision = ori_decision.tolist()[0]
+
+        st.markdown("<h6 style='text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: 100px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Probe Image</h6>", unsafe_allow_html=True)
+        
+        container_2 = st.container()
+        container_4 = st.container()
+        container_5 = st.container()
+
+        with container_2:
+            st.markdown(f"<h6 style='margin-top: 150px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Cosine Distance </h6> <h6 style='margin-top: 150px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:62px;'>{ori_score}</h6>", unsafe_allow_html=True)
+        with container_4:
+            st.markdown(f"<h6 style='margin-top: 120px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Type of Pair </h6> <h6 style='margin-top: 120px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:62px;'>{comparison_type}</h6>", unsafe_allow_html=True)
+        with container_5:  
+            st.markdown(f"<h6 style='margin-top: 120px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Verification Decision </h6> <h6 style='margin-top: 120px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:62px;'>{ori_decision}</h6>", unsafe_allow_html=True)  
+
+        st.markdown("<h3 style='margin-top: 215px;'></h3>", unsafe_allow_html=True)
+        probe_img_path = res["Probe_img_path"]
+        probe_img_path = probe_img_path.tolist()[0]
+        image = Image.open(probe_img_path.strip('\"'))
+        image = image.resize((350, 350))
+        st.image(image)
+
+
+    with col2:   
+
+        choise = res["Face Beautification or Face Coding"]
+        choise = choise.tolist()[0]
+
+        select_beautifi = res["Face Beautification Tool"]
+        select_beautifi = select_beautifi.tolist()[0]
+
+        select_coding = res["Face Coding Tool"]
+        select_coding = select_coding.tolist()[0]
+
+        # if no choise is slecetd
+        if choise == "None":
+            
+
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: 100px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Beautification/Face Coding</h6>", unsafe_allow_html=True)
+            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 350px; '>No face beautification or face coding is applied</h5>", unsafe_allow_html=True)
+            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 110px; '>😔</h5>", unsafe_allow_html=True)
+        
+        # if no beautification filter is selected
+        if choise == "Face Beautification" and select_beautifi == "None" : 
+
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: 100px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Filtered Probe Image</h6>", unsafe_allow_html=True)
+            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 350px; '> Please select the face beautification tool</h5>", unsafe_allow_html=True)
+            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 110px; '>😊</h5>", unsafe_allow_html=True)
+
+        # if a beautification filter is selected
+        if choise == "Face Beautification" and select_beautifi != "None" : 
+
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: 100px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Filtered Probe Image</h6>", unsafe_allow_html=True)
+
+            beauti_score = res["Score After Beautification"]
+            beauti_score = beauti_score.tolist()[0]
+
+            beauti_decision = res["Decision After Beautification"]
+            beauti_decision = beauti_decision.tolist()[0]
+
+            container_6 = st.container()
+            container_7 = st.container()
+
+            with container_6:
+                st.markdown(f"<h6 style='margin-top: 170px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Cosine Distance </h6> <h6 style='margin-top: 170px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:62px;'>{beauti_score}</h6>", unsafe_allow_html=True)
+            with container_7:
+                st.markdown(f"<h6 style='margin-top: 130px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Verification Decision </h6> <h6 style='margin-top: 130px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:62px;'>{beauti_decision}</h6>", unsafe_allow_html=True)  
+
+
+            st.markdown("<h3 style=' margin-top: 242px;'></h3>", unsafe_allow_html=True)
+            beauti_img_path = res["Filtred_probe_img_path"]
+            beauti_img_path = beauti_img_path.tolist()[0]
+            image = Image.open(beauti_img_path.strip('\"'))
+            image = image.resize((350, 350))
+            st.image(image)
+        
+        # If no image coding tool is selected
+        if choise == "Face Coding" and select_coding == "None": 
+
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: 100px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Decoded Probe Image</h6>", unsafe_allow_html=True)
+            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 350px; '> Please select the face coding tool</h5>", unsafe_allow_html=True)
+            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 110px; '>😊</h5>", unsafe_allow_html=True)
+
+            # if the image coding tool is selected
+        if choise == "Face Coding" and select_coding != "None": 
+
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: 100px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Decoded Probe Image</h6>", unsafe_allow_html=True)
+
+            coding_score = res["Score After Coding"]
+            coding_score = coding_score.tolist()[0]
+
+            coding_decision = res["Decision After Coding"]
+            coding_decision = coding_decision.tolist()[0]
+
+
+
+            PSNR_YUV = res["PSNR-YUV"]
+            PSNR_YUV = PSNR_YUV.tolist()[0]
+
+            MS_SSIM = res["MS-SSIM"]
+            MS_SSIM = MS_SSIM.tolist()[0]
+
+            container_8 = st.container()
+            container_9 = st.container()
+            container_12 = st.container()
+            container_13 = st.container()
+
+            with container_8:
+                st.markdown(f"<h6 style='margin-top: 140px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Cosine Distance </h6> <h6 style='margin-top: 140px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:62px;'>{coding_score}</h6>", unsafe_allow_html=True)
+            with container_9:
+                st.markdown(f"<h6 style='margin-top: 112px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Verification Decision </h6> <h6 style='margin-top: 112px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:62px;'>{coding_decision}</h6>", unsafe_allow_html=True)  
+
+            with container_12:
+                st.markdown(f"<h6 style='margin-top: 112px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> PSNR-YUV </h6> <h6 style='margin-top: 112px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:62px;'>{PSNR_YUV}</h6>", unsafe_allow_html=True)
+            with container_13:
+                st.markdown(f"<h6 style='margin-top: 112px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'>  MS-SSIM </h6> <h6 style='margin-top: 112px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:62px;'>{MS_SSIM}</h6>", unsafe_allow_html=True)      
+
+            st.markdown("<h3 style=' margin-top: 192px;'></h3>", unsafe_allow_html=True)
+            decoded_img_path = res["Decoded_probe_img_path"]
+            decoded_img_path = decoded_img_path.tolist()[0]
+            image = Image.open(decoded_img_path.strip('\"'))
+            image = image.resize((350, 350))
+            st.image(image)
+
+
+    with col3:
+
+        st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: 100px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Verification Explainability</h6>", unsafe_allow_html=True)
+        
+        deci_type = res["Decision Type"]
+        deci_type = deci_type.tolist()[0]
+
+        exp_map = res["Explainability Map"]
+        exp_map = exp_map.tolist()[0]
+
+        container_10 = st.container()
+        container_11 = st.container()
+
+        with container_10:
+            
+            st.markdown(f"<h6 style='margin-top: 130px; text-align: center;float:left; margin-left: 47px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Type of Decision </h6><h6 style='margin-top: 130px; text-align: center;float:right; margin-right: 47px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> {deci_type} </h6>", unsafe_allow_html=True)
+        with container_11:
+            if deci_type == "True Positive" or deci_type == "False Positive" or deci_type == "??":
+                st.markdown(f"<h6 style='margin-top: 110px; text-align: center;float:left; margin-left: 47px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px; outline: 2px solid #0000FF;'> Similarity Map </h6><h6 style='margin-top: 110px; text-align: center;float:right; margin-right: 47px; width: 180px; height: 40px; line-height: 40px; color:#A9A9A9; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Dissimilarity Map </h6>", unsafe_allow_html=True)  
+
+            if deci_type == "True Negative" or deci_type == "False Negative":
+                st.markdown(f"<h6 style='margin-top: 110px; text-align: center;float:left; margin-left: 47px; width: 180px; height: 40px; line-height: 40px; color:#A9A9A9; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Similarity Map </h6><h6 style='margin-top: 110px; text-align: center;float:right; margin-right: 47px; width: 180px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px; outline: 2px solid #0000FF;'> Dissimilarity Map </h6>", unsafe_allow_html=True)  
+
+        st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: 115px; background-color:#E0FFFF; border-radius: 10px 10px; height: 110px; outline: 2px solid #AFEEEE;'><p style='margin-top: 5px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Highlights the face regions contributing to the type of decision using a color code ranging from red to purple [More to less important].</p></h6>", unsafe_allow_html=True)
+        st.markdown("<h3 style=' margin-top: 195px;'></h3>", unsafe_allow_html=True)
+        explai_img_path = res["Similar_region_HM_path"]
+        explai_img_path = explai_img_path.tolist()[0]
+        image = Image.open(explai_img_path.strip('\"'))
+        image = image.resize((350, 350))
+        st.image(image)    
