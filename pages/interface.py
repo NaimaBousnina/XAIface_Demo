@@ -22,6 +22,7 @@ margin-top:-200px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 10px;
+margin-bottom: 10px;
 
 }
 
