@@ -48,7 +48,7 @@ div.stButton > button:first-child
     height: 3.5em;
     width: 180px; 
     margin-top: 70px;
-    margin-left:900px; 
+    margin-left:800px; 
 }
 
 div[data-testid="stMarkdownContainer"] p {
