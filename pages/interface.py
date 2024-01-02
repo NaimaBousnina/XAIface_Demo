@@ -32,7 +32,6 @@ margin-left: auto;
 margin-right: auto;
 margin-top: 10px;
 margin-bottom: -5px;
-
 }
 
 .css-164nlkn.egzxvld1
@@ -44,7 +43,7 @@ visibility: hidden;
 visibility: hidden;
 }
 
-.css-1v0mbdj.etr89bj1 /* left image */
+.st-emotion-cache-1kyxreq e115fcil2 /* left image */
 {
 text-align: center;
 display: block;
