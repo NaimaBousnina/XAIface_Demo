@@ -18,6 +18,7 @@ margin-top:-200px;
 }
 .st-emotion-cache-1v0mbdj.e115fcil1 /*logo in the side bar*/
 {
+width: 20px
 background-color: red;
 }
 
