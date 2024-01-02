@@ -186,7 +186,7 @@ with second_container:
         ori_decision = res["Original Decision"]
         ori_decision = ori_decision.tolist()[0]
 
-        st.markdown("<h6 style='text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: 20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Probe Image</h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -10px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Probe Image</h6>", unsafe_allow_html=True)
         
         container_2 = st.container()
         container_4 = st.container()
