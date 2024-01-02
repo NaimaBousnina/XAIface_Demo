@@ -9,7 +9,6 @@ st.markdown("""
 margin-left: -100px;
 
 }
-
 </style>
 """, unsafe_allow_html = True)
 
