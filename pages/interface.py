@@ -6,10 +6,10 @@ import streamlit_pandas as sp
 st.set_page_config(layout="wide")
 st.markdown("""
 <style>
-.st-emotion-cache-zt5igj.e1nzilvr4 /* Gallery image and FV set up boxes*/
+/*.st-emotion-cache-zt5igj.e1nzilvr4 /* Gallery image and FV set up boxes*/
 {
 margin-top: 70px;
-}
+}*/
 /*.st-emotion-cache-keje6w.e1f1d6gn3 /* cotainer of gallery image and FV tools*/
 {
 #background-color: red;
