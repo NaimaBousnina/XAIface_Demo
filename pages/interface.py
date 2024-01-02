@@ -152,6 +152,7 @@ with first_container:
     col1, col2 = st.columns(2)
     with col1:
         st.markdown("<h6 style='margin-top: -135px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Gallery Image</h6>", unsafe_allow_html=True)
+        st.markdown("<h3 style='margin-top: -15px;'></h3>", unsafe_allow_html=True)
         probe_img_path = res["Gallery_img_path"]
         probe_img_path = probe_img_path.tolist()[0]
         image = Image.open(probe_img_path.strip('\"'))
