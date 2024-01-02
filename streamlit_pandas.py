@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 
-st.set_page_config(layout="wide")
 st.markdown("""
 <style>
 .st-emotion-cache-1v0mbdj.e115fcil1
