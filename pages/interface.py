@@ -25,7 +25,7 @@ visibility: hidden;
 font-size:18px;
 }
 
-.element-container st-emotion-cache-1ky1uaf.e1f1d6gn4 /* select boxes: label + select text*/
+.row-widget.stSelectbox/* select boxes: label + select text*/
 {
 margin-bottom: 40px;
 }
