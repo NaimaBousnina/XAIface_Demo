@@ -2,6 +2,18 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 
+st.set_page_config(layout="wide")
+st.markdown("""
+<style>
+.st-emotion-cache-1v0mbdj.e115fcil1
+{
+margin-left: -100px;
+
+}
+
+</style>
+""", unsafe_allow_html = True)
+
 
 def filter_string(df, column, selected_list):
     final = []
