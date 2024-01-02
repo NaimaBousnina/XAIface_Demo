@@ -9,7 +9,7 @@ st.markdown("""
 {
     visibility: hidden;
 }
-.css-163ttbj.e1fqkh3o11 /*sidebar of MultipageApp*/
+.st-emotion-cache-vk3wp9.eczjsme11/*sidebar of MultipageApp*/
 {
     visibility: hidden;
     margin-left: -350px;
