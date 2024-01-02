@@ -6,13 +6,14 @@ import streamlit_pandas as sp
 st.set_page_config(layout="wide")
 st.markdown("""
 <style>
-.st-emotion-cache-79elbk.eczjsme10
+.st-emotion-cache-1nm2qww.eczjsme2
 {
 visibility: hidden;
 }
-.css-18ni7ap.e8zbici2
+.st-emotion-cache-79elbk.eczjsme10
 {
-margin-top:-50px;    
+visibility: hidden;
+margin-top:-50px; 
 }
 
 .css-164nlkn.egzxvld1
