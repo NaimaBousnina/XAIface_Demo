@@ -6,6 +6,10 @@ import streamlit_pandas as sp
 st.set_page_config(layout="wide")
 st.markdown("""
 <style>
+.st-emotion-cache-79elbk.eczjsme10
+{
+visibility: hidden;
+}
 .css-18ni7ap.e8zbici2
 {
 margin-top:-50px;    
