@@ -43,7 +43,7 @@ visibility: hidden;
 visibility: hidden;
 }
 
-.st-emotion-cache-1kyxreq e115fcil2 /* left image */
+.st-emotion-cache-1kyxreq.e115fcil2 /* left image */
 {
 text-align: center;
 display: block;
