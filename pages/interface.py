@@ -32,7 +32,7 @@ margin-bottom: 35px;
 .st-emotion-cache-79elbk.eczjsme10
 {
 visibility: hidden;
-margin-top:-200px; 
+margin-top:-150px; 
 }
 
 .st-emotion-cache-1v0mbdj.e115fcil1 /* logo in the sidebar*/
