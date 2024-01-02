@@ -15,6 +15,10 @@ margin-top:-50px;
 {
 visibility: hidden;
 }
+.st-emotion-cache-18ni7ap.ezrtsby2
+{
+visibility: hidden;
+}
 
 .css-1v0mbdj.etr89bj1 /* left image */
 {
