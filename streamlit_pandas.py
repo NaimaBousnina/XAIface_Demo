@@ -2,17 +2,6 @@ import streamlit as st
 import pandas as pd
 from PIL import Image
 
-st.markdown("""
-<style>
-.st-emotion-cache-1v0mbdj.e115fcil1
-{
-margin-left: -100px;
-
-}
-</style>
-""", unsafe_allow_html = True)
-
-
 def filter_string(df, column, selected_list):
     final = []
     df = df[df[column].notna()]
