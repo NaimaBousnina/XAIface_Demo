@@ -13,7 +13,7 @@ visibility: hidden;
 
 .st-emotion-cache-16idsys.e1nzilvr5 p /* Labels in the sidebar box*/
 {
-font-size:17px;
+font-size:18px;
 }
 
 .element-container.st-emotion-cache-xic19b.e1f1d6gn4 /* select boxes: label + select text*/
