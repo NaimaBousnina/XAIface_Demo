@@ -16,11 +16,6 @@ visibility: hidden;
 margin-top:-200px; 
 }
 
-.st-emotion-cache-1v0mbdj.e115fcil1
-{
-margin-left: -100px;
-}
-
 .css-164nlkn.egzxvld1
 {
 visibility: hidden;
