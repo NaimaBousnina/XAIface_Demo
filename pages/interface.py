@@ -43,12 +43,6 @@ visibility: hidden;
 visibility: hidden;
 }
 
-.st-emotion-cache-1kyxreq.e115fcil2 /* left image */
-{
-display: block;
-margin-top: -90px;
-}
-
 .css-1xtoq5p.e1fqkh3o2
 {
 visibility: hidden;  
