@@ -63,8 +63,7 @@ def create_widgets(df, create_data={}, ignore_columns=[], on_change=None):
     """
     st.markdown(
     f'<img src="{"xaiface_logo_PNG.png"}" style="{style_image1}">',
-    unsafe_allow_html=True,
-)
+    unsafe_allow_html=True,)
     
    
     st.sidebar.markdown("<h3 style='margin-bottom: 25px; text-align: center; color: White; margin-left: -25px; margin-right: -25px; font-size:30px; font-family: Sans-Serif; background-color:Black; height: 60px; line-height: 30px; padding: 10px 10px;'>Settings</h3>", unsafe_allow_html=True)
