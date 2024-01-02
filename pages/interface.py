@@ -6,6 +6,11 @@ import streamlit_pandas as sp
 st.set_page_config(layout="wide")
 st.markdown("""
 <style>
+
+.st-emotion-cache-ocqkz7.e1f1d6gn5
+{
+background-color: red;
+}
 .st-emotion-cache-1nm2qww.eczjsme2
 {
 visibility: hidden;
