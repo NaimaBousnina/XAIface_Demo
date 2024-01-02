@@ -13,7 +13,7 @@ visibility: hidden;
 
 .st-emotion-cache-ue6h4q.e1y5xkzn3
 {
-font-size:20px;
+font-size:30px;
 }
 
 .st-emotion-cache-79elbk.eczjsme10
