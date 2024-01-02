@@ -21,7 +21,8 @@ margin-top:-200px;
 {
 margin-left: auto;
 margin-right: auto;
-background-color: red;
+margin-top: 10px;
+
 }
 
 .css-164nlkn.egzxvld1
