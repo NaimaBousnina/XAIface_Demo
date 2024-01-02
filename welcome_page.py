@@ -25,7 +25,7 @@ st.markdown("""
     margin-bottom:-150px;
 }
     
-.css-1v0mbdj.etr89bj1 /* XAIface logo */
+.st-emotion-cache-1v0mbdj.e115fcil1 /* XAIface logo */
 {
     text-align: center;
     display: block;
