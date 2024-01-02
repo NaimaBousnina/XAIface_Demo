@@ -10,12 +10,18 @@ st.markdown("""
 {
 visibility: hidden;
 }
+
 .st-emotion-cache-79elbk.eczjsme10
 {
 visibility: hidden;
 margin-top:-200px; 
 }
 
+.st-emotion-cache-1v0mbdj.e115fcil1
+{
+width: 50px;
+height: auto;
+}
 .css-164nlkn.egzxvld1
 {
 visibility: hidden;
