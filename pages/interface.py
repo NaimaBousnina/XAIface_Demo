@@ -199,7 +199,7 @@ with second_container:
         with container_5:  
             st.markdown(f"<h6 style='margin-top: 40px; text-align: center;float:left; margin-left: 30px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Verification Decision </h6> <h6 style='margin-top: 40px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:55px;'>{ori_decision}</h6>", unsafe_allow_html=True)  
 
-        st.markdown("<h3 style='margin-top: 215px;'></h3>", unsafe_allow_html=True)
+        st.markdown("<h3 style='margin-top: 115px;'></h3>", unsafe_allow_html=True)
         probe_img_path = res["Probe_img_path"]
         probe_img_path = probe_img_path.tolist()[0]
         image = Image.open(probe_img_path.strip('\"'))
