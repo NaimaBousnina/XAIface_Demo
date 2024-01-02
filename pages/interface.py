@@ -26,10 +26,6 @@ visibility: hidden;
 margin-top:-200px; 
 }
 
-.st-emotion-cache-9aoz2h.e1vs0wn30
-{
-background-color: red;
-}
 .st-emotion-cache-1v0mbdj.e115fcil1 /* logo in the sidebar*/
 {
 margin-left: auto;
