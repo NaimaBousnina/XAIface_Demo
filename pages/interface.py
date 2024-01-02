@@ -13,7 +13,7 @@ visibility: hidden;
 .st-emotion-cache-79elbk.eczjsme10
 {
 visibility: hidden;
-margin-top:-200px; 
+margin-top:-180px; 
 }
 
 .css-164nlkn.egzxvld1
