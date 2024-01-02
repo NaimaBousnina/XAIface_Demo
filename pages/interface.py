@@ -27,7 +27,7 @@ font-size:18px;
 
 .row-widget.stSelectbox/* select boxes: label + select text*/
 {
-margin-bottom: 40px;
+margin-bottom: 35px;
 }
 .st-emotion-cache-79elbk.eczjsme10
 {
