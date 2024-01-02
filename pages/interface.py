@@ -32,14 +32,14 @@ margin-bottom: 35px;
 .st-emotion-cache-79elbk.eczjsme10 /* the hidden part aboce settings*/
 {
 visibility: hidden;
-margin-top:-120px; 
+margin-top:-100px; 
 }
 
 .st-emotion-cache-1v0mbdj.e115fcil1 /* logo in the sidebar*/
 {
 margin-left: auto;
 margin-right: auto;
-margin-top: -10px;
+margin-top: -50px;
 margin-bottom: -5px;
 }
 
