@@ -19,8 +19,8 @@ margin-top:-200px;
 
 .st-emotion-cache-1kyxreq.e115fcil2 /* logo in the sidebar*/
 {
-width: 50px;
-height: auto;
+width: 10px;
+height: 10px;
 }
 .css-164nlkn.egzxvld1
 {
