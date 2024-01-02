@@ -16,7 +16,7 @@ visibility: hidden;
 font-size:17px;
 }
 
-.element-container.st-emotion-cache-xic19b.e1f1d6gn4
+.element-container.st-emotion-cache-xic19b.e1f1d6gn4 /* select boxes: label + select text*/
 {
 margin-bottom: 25px;
 }
@@ -31,7 +31,7 @@ margin-top:-200px;
 margin-left: auto;
 margin-right: auto;
 margin-top: 10px;
-margin-bottom: 10px;
+margin-bottom: -5px;
 
 }
 
