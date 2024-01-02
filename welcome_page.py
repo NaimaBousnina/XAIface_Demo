@@ -60,12 +60,12 @@ div[data-testid="stMarkdownContainer"] p {
 </style>
 """, unsafe_allow_html = True)
 
-st.markdown("<h1 style='margin-left:150px;text-align: center;  color: Grey; font-size:54px; margin-top: 55px; font-family: Sans-Serif;'>Welcome to the XAIface Project Demo</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='margin-left:50px;text-align: center;  color: Grey; font-size:54px; margin-top: 55px; font-family: Sans-Serif;'>Welcome to the XAIface Project Demo</h1>", unsafe_allow_html=True)
 image = Image.open("xaiface_logo_PNG.png")
 image = image.resize((550, 350))
 st.image(image)
 
-st.markdown("<h5 style='margin-left:150px; text-align: center;  color: red; font-size:30px; margin-top: 60px; margin-bottom: -10px; font-family: Sans-Serif; '>Please press F11 on your keyboard to enter the full screen mode</h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='margin-left:50px; text-align: center;  color: red; font-size:30px; margin-top: 60px; margin-bottom: -10px; font-family: Sans-Serif; '>Please press F11 on your keyboard to enter the full screen mode</h5>", unsafe_allow_html=True)
 naima ="Start"
 strat_button = st.button(label=naima)
 
