@@ -10,11 +10,11 @@ st.markdown("""
 {
 margin-top: 70px;
 }
-.st-emotion-cache-keje6w.e1f1d6gn3 /* cotainer of gallery image and FV tools*/
+/*.st-emotion-cache-keje6w.e1f1d6gn3 /* cotainer of gallery image and FV tools*/
 {
 #background-color: red;
 margin-top: -70px;
-}
+}*/
 .st-emotion-cache-1nm2qww.eczjsme2
 {
 visibility: hidden;
