@@ -40,7 +40,7 @@ margin-top:-100px;
 margin-left: auto;
 margin-right: auto;
 margin-top: -70px;
-margin-bottom: -5px;
+margin-bottom: 10px;
 }
 
 .css-164nlkn.egzxvld1
