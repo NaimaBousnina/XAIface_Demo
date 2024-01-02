@@ -150,7 +150,7 @@ with first_container:
         st.markdown(f'<img src="{probe_img_path}" style="{style_image1}">',unsafe_allow_html=True,)
         #image = Image.open(probe_img_path.strip('\"'))
         #image = image.resize((350, 350))
-        st.image(image)
+        #st.image(image)
 
     with col2:
         st.markdown("<h6 style='margin-top: -135px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px;'>Face Verification Set Up</h6>", unsafe_allow_html=True)
