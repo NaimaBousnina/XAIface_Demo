@@ -27,7 +27,7 @@ font-size:18px;
 
 .element-container.st-emotion-cache-xic19b.e1f1d6gn4 /* select boxes: label + select text*/
 {
-margin-bottom: 25px;
+margin-bottom: 40px;
 }
 .st-emotion-cache-79elbk.eczjsme10
 {
