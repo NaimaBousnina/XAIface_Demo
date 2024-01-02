@@ -17,7 +17,7 @@ visibility: hidden;
 margin-top:-200px; 
 }
 
-.st-emotion-cache-1v0mbdj.e115fcil1
+.st-emotion-cache-1kyxreq.e115fcil2 /* logo in the sidebar*/
 {
 width: 50px;
 height: auto;
