@@ -34,11 +34,6 @@ margin-top: 10px;
 margin-bottom: -5px;
 }
 
-.element-container.st-emotion-cache-195a7zi.e1f1d6gn4
-{
-margin-top: -90px;
-}
-
 .css-164nlkn.egzxvld1
 {
 visibility: hidden;
@@ -145,7 +140,7 @@ second_container = st.container()
 with first_container:
     col1, col2 = st.columns(2)
     with col1:
-        st.markdown("<h6 style='margin-top: -135px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Gallery Image</h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='margin-bottom: -100px; margin-top: -135px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Gallery Image</h6>", unsafe_allow_html=True)
         probe_img_path = res["Gallery_img_path"]
         probe_img_path = probe_img_path.tolist()[0]
         image = Image.open(probe_img_path.strip('\"'))
