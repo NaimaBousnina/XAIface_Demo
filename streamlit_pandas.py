@@ -54,7 +54,7 @@ def create_widgets(df, create_data={}, ignore_columns=[], on_change=None):
         df = df.drop(column, axis=1)
     global all_widgets
     all_widgets = []
-    st.sidebar.markdown("<h3 style='text-align: center; color: White; margin-left: 20px; margin-right: -20px; font-size:22px; font-family: Sans-Serif; background-color:Black; height: 60px; line-height: 30px;'>Settings</h3>", unsafe_allow_html=True)
+    st.sidebar.markdown("<h3 style='text-align: center; color: White; margin-left: -10px; margin-right: -10px; font-size:22px; font-family: Sans-Serif; background-color:Black; height: 60px; line-height: 30px;'>Settings</h3>", unsafe_allow_html=True)
     #st.sidebar.markdown("About")
     for ctype, column in zip(df.dtypes, df.columns):
         if column in create_data:
