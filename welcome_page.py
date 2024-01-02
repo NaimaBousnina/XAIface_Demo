@@ -14,6 +14,10 @@ st.markdown("""
     visibility: hidden;
     margin-left: -350px;
 }
+.st-emotion-cache-18ni7ap.ezrtsby2
+{
+    visibility: hidden;
+}
 
 .appview-container.css-1wrcr25.egzxvld6  /*Whole page*/
 {
