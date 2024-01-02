@@ -27,6 +27,8 @@ st.markdown("""
     display: block;
     margin-top: -5px;
     width: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
 
 }
 
