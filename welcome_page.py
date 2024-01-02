@@ -14,7 +14,7 @@ st.markdown("""
     visibility: hidden;
     margin-left: -350px;
 }
-.st-emotion-cache-18ni7ap.ezrtsby2
+.st-emotion-cache-14rvwma.eczjsme11
 {
     visibility: hidden;
 }
