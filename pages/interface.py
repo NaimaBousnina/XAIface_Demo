@@ -45,10 +45,7 @@ visibility: hidden;
 
 .st-emotion-cache-1kyxreq.e115fcil2 /* left image */
 {
-text-align: center;
 display: block;
-margin-left: auto;
-margin-right: auto;
 margin-top: -90px;
 }
 
