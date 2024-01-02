@@ -11,11 +11,15 @@ st.markdown("""
 visibility: hidden;
 }
 
-.st-emotion-cache-16idsys.e1nzilvr5 p
+.st-emotion-cache-16idsys.e1nzilvr5 p /* Labels in the sidebar box*/
 {
-font-size:18px;
+font-size:17px;
 }
 
+.element-container.st-emotion-cache-xic19b.e1f1d6gn4
+{
+margin-bottom: 10px;
+}
 .st-emotion-cache-79elbk.eczjsme10
 {
 visibility: hidden;
