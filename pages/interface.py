@@ -147,7 +147,7 @@ with first_container:
         width: 350;
         height: 350;
         """
-        st.markdown(f'<img src={probe_img_path}>',unsafe_allow_html=True,)
+        st.markdown(f'<img src="{probe_img_path}>"',unsafe_allow_html=True,)
         #image = Image.open(probe_img_path.strip('\"'))
         #image = image.resize((350, 350))
         #st.image(image)
