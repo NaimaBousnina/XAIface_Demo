@@ -29,10 +29,10 @@ font-size:18px;
 {
 margin-bottom: 35px;
 }
-.st-emotion-cache-79elbk.eczjsme10
+.st-emotion-cache-79elbk.eczjsme10 /* the hidden part aboce settings*/
 {
 visibility: hidden;
-margin-top:-150px; 
+margin-top:-120px; 
 }
 
 .st-emotion-cache-1v0mbdj.e115fcil1 /* logo in the sidebar*/
