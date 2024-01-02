@@ -143,8 +143,13 @@ with first_container:
         st.markdown("<h6 style='margin-top: -135px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Gallery Image</h6>", unsafe_allow_html=True)
         probe_img_path = res["Gallery_img_path"]
         probe_img_path = probe_img_path.tolist()[0]
-        image = Image.open(probe_img_path.strip('\"'))
-        image = image.resize((350, 350))
+        style_image2 = """
+        width: 350;
+        height: 350;
+        """
+        st.markdown(f'<img src="{probe_img_path}" style="{style_image1}">',unsafe_allow_html=True,)
+        #image = Image.open(probe_img_path.strip('\"'))
+        #image = image.resize((350, 350))
         st.image(image)
 
     with col2:
