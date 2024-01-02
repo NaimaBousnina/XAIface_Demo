@@ -1,2 +1,5 @@
 streamlit==1.29.0
 streamlit_extras==0.3.6
+PIL
+pandas
+streamlit_pandas==0.0.9
