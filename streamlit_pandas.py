@@ -54,7 +54,7 @@ def create_widgets(df, create_data={}, ignore_columns=[], on_change=None):
         df = df.drop(column, axis=1)
     global all_widgets
     all_widgets = []
-    st.sidebar.image("xaiface_logo_PNG.png", width=100 use_column_width=True)
+    st.sidebar.image("xaiface_logo_PNG.png", width=100, use_column_width=True)
    
     st.sidebar.markdown("<h3 style='text-align: center; color: White; margin-left: -25px; margin-right: -25px; font-size:22px; font-family: Sans-Serif; background-color:Black; height: 60px; line-height: 30px;'>Settings</h3>", unsafe_allow_html=True)
     #st.sidebar.markdown("About")
