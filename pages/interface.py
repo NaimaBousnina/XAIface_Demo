@@ -50,7 +50,6 @@ display: block;
 margin-left: auto;
 margin-right: auto;
 margin-top: -90px;
-width: 100%;
 }
 
 .css-1xtoq5p.e1fqkh3o2
