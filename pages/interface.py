@@ -39,7 +39,7 @@ margin-top:-150px;
 {
 margin-left: auto;
 margin-right: auto;
-margin-top: 10px;
+margin-top: -10px;
 margin-bottom: -5px;
 }
 
