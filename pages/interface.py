@@ -18,7 +18,7 @@ font-size:17px;
 
 .element-container.st-emotion-cache-xic19b.e1f1d6gn4
 {
-margin-bottom: 10px;
+margin-bottom: 20px;
 }
 .st-emotion-cache-79elbk.eczjsme10
 {
