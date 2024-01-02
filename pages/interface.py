@@ -143,7 +143,7 @@ with first_container:
         st.markdown("<h6 style='margin-top: -135px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Gallery Image</h6>", unsafe_allow_html=True)
         probe_img_path = res["Gallery_img_path"]
         probe_img_path = probe_img_path.tolist()[0]
-        style_image2 = """
+        style_image1 = """
         width: 350;
         height: 350;
         """
