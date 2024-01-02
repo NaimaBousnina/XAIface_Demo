@@ -11,6 +11,11 @@ st.markdown("""
 visibility: hidden;
 }
 
+.st-emotion-cache-ue6h4q.e1y5xkzn3
+{
+font-size:20px;
+}
+
 .st-emotion-cache-79elbk.eczjsme10
 {
 visibility: hidden;
