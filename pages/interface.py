@@ -11,7 +11,7 @@ st.markdown("""
 visibility: hidden;
 }
 
-.st-emotion-cache-16idsys.e1nzilvr5
+.st-emotion-cache-16idsys.e1nzilvr5 p
 {
 font-size:20px;
 }
