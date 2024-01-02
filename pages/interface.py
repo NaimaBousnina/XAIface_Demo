@@ -34,6 +34,11 @@ margin-top: 10px;
 margin-bottom: -5px;
 }
 
+.st-emotion-cache-1kyxreq.e115fcil2
+{
+margin-top: -90px;
+}
+
 .css-164nlkn.egzxvld1
 {
 visibility: hidden;
