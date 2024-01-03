@@ -73,15 +73,7 @@ visibility: hidden;
  margin-top: -120px;   
 }
 
-.block-container.css-k1ih3n.egzxvld4
-{
-height:100%;
-}
 
-.css-qcqlej.egzxvld3
-{
-margin-top: -500px;  
-}
 
 .element-container.css-1ble31s.e1tzin5v3
 {
