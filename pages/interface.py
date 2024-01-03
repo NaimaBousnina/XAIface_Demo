@@ -303,7 +303,7 @@ with second_container:
             with container_13:
                 st.markdown(f"<h6 style='margin-top: 5px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'>  MS-SSIM </h6> <h6 style='margin-top: 5px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:40px;'>{MS_SSIM}</h6>", unsafe_allow_html=True)      
 
-            st.markdown("<h3 style=' margin-top: 45px;'></h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style=' margin-top: 40px;'></h3>", unsafe_allow_html=True)
             decoded_img_path = res["Decoded_probe_img_path"]
             decoded_img_path = decoded_img_path.tolist()[0]
             image = Image.open(decoded_img_path.strip('\"'))
