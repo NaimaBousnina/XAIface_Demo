@@ -255,7 +255,7 @@ with second_container:
        ####################################################################################################
        #################################################### WE ARE HERE ###################################
        ####################################################################################################
-            st.markdown("<h3 style=' margin-top: 90px;'></h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style=' margin-top: 50px;'></h3>", unsafe_allow_html=True)
             beauti_img_path = res["Filtred_probe_img_path"]
             beauti_img_path = beauti_img_path.tolist()[0]
             image = Image.open(beauti_img_path.strip('\"'))
