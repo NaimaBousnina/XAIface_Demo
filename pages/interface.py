@@ -220,9 +220,7 @@ with second_container:
 
         # if no choise is slecetd
         if choise == "Select":
-       ####################################################################################################
-       #################################################### WE ARE HERE ###################################
-       ####################################################################################################
+
 
             st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Beautification/Face Coding</h6>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '>No face beautification or face coding is applied</h5>", unsafe_allow_html=True)
@@ -254,8 +252,10 @@ with second_container:
             with container_7:
                 st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Verification Decision </h6> <h6 style='margin-top: 30px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:40px;'>{beauti_decision}</h6>", unsafe_allow_html=True)  
 
-
-            st.markdown("<h3 style=' margin-top: 150px;'></h3>", unsafe_allow_html=True)
+       ####################################################################################################
+       #################################################### WE ARE HERE ###################################
+       ####################################################################################################
+            st.markdown("<h3 style=' margin-top: 90px;'></h3>", unsafe_allow_html=True)
             beauti_img_path = res["Filtred_probe_img_path"]
             beauti_img_path = beauti_img_path.tolist()[0]
             image = Image.open(beauti_img_path.strip('\"'))
