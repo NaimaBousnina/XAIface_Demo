@@ -191,9 +191,7 @@ with second_container:
         container_2 = st.container()
         container_4 = st.container()
         container_5 = st.container()
-       ####################################################################################################
-       #################################################### WE ARE HERE ###################################
-       ####################################################################################################
+
         with container_2:
             st.markdown(f"<h6 style='margin-top: 40px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Cosine Distance </h6> <h6 style='margin-top: 40px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:45px;'>{ori_score}</h6>", unsafe_allow_html=True)
         with container_4:
@@ -222,9 +220,11 @@ with second_container:
 
         # if no choise is slecetd
         if choise == "Select":
-            
+       ####################################################################################################
+       #################################################### WE ARE HERE ###################################
+       ####################################################################################################
 
-            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Beautification/Face Coding</h6>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -50px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Beautification/Face Coding</h6>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 350px; '>No face beautification or face coding is applied</h5>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 110px; '>😔</h5>", unsafe_allow_html=True)
         
