@@ -125,7 +125,7 @@ all_widgets = sp.create_widgets(df, create_data, ignore_columns=["Probe_img_path
                                                                  "Decoded_probe_img_path", "Score After Coding",
                                                                  "Similar_region_HM_path", "Score After Beautification",
                                                                  "Decision After Coding", "Decision Type", 
-                                                                 "Explainability Map", "PSNR-YUV", "MS-SSIM"], on_change=jarab)
+                                                                 "Explainability Map", "Coding Type", "PSNR-YUV", "MS-SSIM"], on_change=jarab)
 
 # Filter the dataframe according to the user's selections
 res = sp.filter_df(df, all_widgets)
@@ -262,12 +262,23 @@ with second_container:
             st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Decoded Probe Image</h6>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Please select the face coding tool</h5>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😊</h5>", unsafe_allow_html=True)
-
+         
+       ####################################################################################################
+       #################################################### WE ARE HERE ###################################
+       ####################################################################################################
             # if the image coding tool is selected
         if choise == "Face Coding" and select_coding != "Select": 
+         
+            coding_type = res["Coding Type"]
+            coding_type = coding_type.tolist()[0]
 
-            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Decoded Probe Image</h6>", unsafe_allow_html=True)
+            if coding_type == "JPEG":
+                st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '> {coding_type} Decoded Probe Image</h6>", unsafe_allow_html=True)
 
+            if coding_type == "JPEG":
+                st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '> {coding_type} Decoded Probe Image</h6>", unsafe_allow_html=True)
+
+            
             coding_score = res["Score After Coding"]
             coding_score = coding_score.tolist()[0]
 
@@ -317,9 +328,7 @@ with second_container:
 
         container_10 = st.container()
         container_11 = st.container()
-       ####################################################################################################
-       #################################################### WE ARE HERE ###################################
-       ####################################################################################################
+
         with container_10:
             
             st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Type of Decision </h6><h6 style='margin-top: 30px; text-align: center;float:right; margin-right: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> {deci_type} </h6>", unsafe_allow_html=True)
