@@ -272,15 +272,13 @@ with second_container:
             coding_type = res["Coding Type"]
             coding_type = coding_type.tolist()[0]
 
-            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '> {coding_type} Decoded Probe Image </h6>", unsafe_allow_html=True)
-
             coding_score = res["Score After Coding"]
             coding_score = coding_score.tolist()[0]
 
             coding_decision = res["Decision After Coding"]
             coding_decision = coding_decision.tolist()[0]
 
-
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '> {coding_score} Decoded Probe Image </h6>", unsafe_allow_html=True)
 
             PSNR_YUV = res["PSNR-YUV"]
             PSNR_YUV = PSNR_YUV.tolist()[0]
