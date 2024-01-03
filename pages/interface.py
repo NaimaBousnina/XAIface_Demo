@@ -225,8 +225,8 @@ with second_container:
        ####################################################################################################
 
             st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Beautification/Face Coding</h6>", unsafe_allow_html=True)
-            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 200px; '>No face beautification or face coding is applied</h5>", unsafe_allow_html=True)
-            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 90px; '>😔</h5>", unsafe_allow_html=True)
+            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '>No face beautification or face coding is applied</h5>", unsafe_allow_html=True)
+            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 50px; '>😔</h5>", unsafe_allow_html=True)
         
         # if no beautification filter is selected
         if choise == "Face Beautification" and select_beautifi == "Select" : 
