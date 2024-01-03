@@ -255,7 +255,7 @@ with second_container:
                 st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Verification Decision </h6> <h6 style='margin-top: 30px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:40px;'>{beauti_decision}</h6>", unsafe_allow_html=True)  
 
 
-            st.markdown("<h3 style=' margin-top: 242px;'></h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style=' margin-top: 150px;'></h3>", unsafe_allow_html=True)
             beauti_img_path = res["Filtred_probe_img_path"]
             beauti_img_path = beauti_img_path.tolist()[0]
             image = Image.open(beauti_img_path.strip('\"'))
