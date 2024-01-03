@@ -334,7 +334,7 @@ with second_container:
             if deci_type == "True Negative" or deci_type == "False Negative":
                 st.markdown(f"<h6 style='margin-top: 10px; text-align: center;float:left; margin-left: 20px; width: 180px; height: 40px; line-height: 40px; color:#A9A9A9; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Similarity Map </h6><h6 style='margin-top: 10px; text-align: center;float:right; margin-right: 10px; width: 180px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px; outline: 2px solid #0000FF;'> Dissimilarity Map </h6>", unsafe_allow_html=True)  
 
-        st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: 10px; background-color:#E0FFFF; border-radius: 10px 10px; height: 80px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Highlights the face regions contributing to the face verification decision.</p></h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -5px; background-color:#E0FFFF; border-radius: 10px 10px; height: 80px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Highlights the face regions contributing to the face verification decision.</p></h6>", unsafe_allow_html=True)
         st.markdown("<h3 style=' margin-top: 60px;'></h3>", unsafe_allow_html=True)
         explai_img_path = res["Similar_region_HM_path"]
         explai_img_path = explai_img_path.tolist()[0]
