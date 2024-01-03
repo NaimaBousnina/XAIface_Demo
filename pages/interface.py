@@ -191,13 +191,15 @@ with second_container:
         container_2 = st.container()
         container_4 = st.container()
         container_5 = st.container()
-
+       ####################################################################################################
+       #################################################### WE ARE HERE ###################################
+       ####################################################################################################
         with container_2:
             st.markdown(f"<h6 style='margin-top: 60px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Cosine Distance </h6> <h6 style='margin-top: 60px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:45px;'>{ori_score}</h6>", unsafe_allow_html=True)
         with container_4:
-            st.markdown(f"<h6 style='margin-top: 40px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Type of Pair </h6> <h6 style='margin-top: 40px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:45px;'>{comparison_type}</h6>", unsafe_allow_html=True)
+            st.markdown(f"<h6 style='margin-top: 20px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Type of Pair </h6> <h6 style='margin-top: 20px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:45px;'>{comparison_type}</h6>", unsafe_allow_html=True)
         with container_5:  
-            st.markdown(f"<h6 style='margin-top: 40px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Verification Decision </h6> <h6 style='margin-top: 40px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:45px;'>{ori_decision}</h6>", unsafe_allow_html=True)  
+            st.markdown(f"<h6 style='margin-top: 20px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Verification Decision </h6> <h6 style='margin-top: 20px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:45px;'>{ori_decision}</h6>", unsafe_allow_html=True)  
 
         st.markdown("<h3 style='margin-top: 95px;'></h3>", unsafe_allow_html=True)
         probe_img_path = res["Probe_img_path"]
@@ -290,9 +292,7 @@ with second_container:
             container_9 = st.container()
             container_12 = st.container()
             container_13 = st.container()
-            ####################################################################################################
-            #################################################### WE ARE HERE ###################################
-            ####################################################################################################
+     
             with container_8:
                 st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Cosine Distance </h6> <h6 style='margin-top: 30px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:40px;'>{coding_score}</h6>", unsafe_allow_html=True)
             with container_9:
