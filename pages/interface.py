@@ -124,7 +124,7 @@ all_widgets = sp.create_widgets(df, create_data, ignore_columns=["Probe_img_path
                                                                  "Decision After Beautification", 
                                                                  "Decoded_probe_img_path", "Score After Coding",
                                                                  "Similar_region_HM_path", "Score After Beautification",
-                                                                 "Decision After Coding", "Decision Type", "Coding Type", "PSNR-YUV", "MS-SSIM"], on_change=jarab)
+                                                                 "Decision After Coding", "Decision Type", "PSNR-YUV", "MS-SSIM"], on_change=jarab)
 
 # Filter the dataframe according to the user's selections
 res = sp.filter_df(df, all_widgets)
@@ -267,9 +267,6 @@ with second_container:
        ####################################################################################################
             # if the image coding tool is selected
         if choise == "Face Coding" and select_coding != "Select": 
-         
-            coding_type = res["Coding Type"]
-            coding_type = coding_type.tolist()[0]
 
             coding_score = res["Score After Coding"]
             coding_score = coding_score.tolist()[0]
