@@ -124,8 +124,7 @@ all_widgets = sp.create_widgets(df, create_data, ignore_columns=["Probe_img_path
                                                                  "Decision After Beautification", 
                                                                  "Decoded_probe_img_path", "Score After Coding",
                                                                  "Similar_region_HM_path", "Score After Beautification",
-                                                                 "Decision After Coding", "Decision Type", 
-                                                                 "Explainability Map", "Coding Type", "PSNR-YUV", "MS-SSIM"], on_change=jarab)
+                                                                 "Decision After Coding", "Decision Type", "Coding Type", "PSNR-YUV", "MS-SSIM"], on_change=jarab)
 
 # Filter the dataframe according to the user's selections
 res = sp.filter_df(df, all_widgets)
@@ -315,9 +314,6 @@ with second_container:
         
         deci_type = res["Decision Type"]
         deci_type = deci_type.tolist()[0]
-
-        exp_map = res["Explainability Map"]
-        exp_map = exp_map.tolist()[0]
 
         container_10 = st.container()
         container_11 = st.container()
