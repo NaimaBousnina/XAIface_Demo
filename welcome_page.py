@@ -9,6 +9,10 @@ st.markdown("""
 {
  visibility: hidden;
 }
+.st-emotion-cache-czk5ss.e16jpq800
+{
+visibility: hidden;
+}
 .css-18ni7ap.e8zbici2  /*default menu of streamlit library*/
 {
     visibility: hidden;
