@@ -5,6 +5,10 @@ from streamlit_extras.switch_page_button import switch_page
 st.set_page_config(layout="wide")
 st.markdown("""
 <style>
+.st-emotion-cache-30do4w.e3g6aar1
+{
+ visibility: hidden;
+}
 .css-18ni7ap.e8zbici2  /*default menu of streamlit library*/
 {
     visibility: hidden;
