@@ -9,7 +9,7 @@ st.markdown("""
 {
  visibility: hidden;
 }
-.st-emotion-cache-czk5ss.e16jpq800
+.eyeqlp51 st-emotion-cache-fblp2m ex0cdmw0
 {
 visibility: hidden;
 }
