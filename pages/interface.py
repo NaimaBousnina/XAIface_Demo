@@ -114,7 +114,7 @@ create_data = {"Probe-gallery Pair ID": "select",
                 "Face Beautification Tool": "select",
                 "Face Coding Tool": "select",
                 "Face Verification Tool": "select",
-                "Explainability Tool": "select"}
+                "Face Verification Explainability Tool": "select"}
 
 # Creat the sidebar with the desired widgets
 all_widgets = sp.create_widgets(df, create_data, ignore_columns=["Probe_img_path", "Gallery_img_path", 
