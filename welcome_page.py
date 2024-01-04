@@ -19,6 +19,11 @@ st.markdown("""
     visibility: hidden;
 }
 
+.st-emotion-cache-18ni7ap.ezrtsby2
+{
+visibility: hidden;
+}
+
 .appview-container.css-1wrcr25.egzxvld6  /*Whole page*/
 {
     background-color:Beige;
