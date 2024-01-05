@@ -307,7 +307,7 @@ with second_container:
 
     with col3:
 
-        st.markdown("<h6 style='text-align: center; margin-left: 25px; margin-right: 25px; color: Black; font-size:20px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Verification Explainability Heatmap</h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='text-align: center; margin-left: 22px; margin-right: 22px; color: Black; font-size:20px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Verification Explainability Heatmap</h6>", unsafe_allow_html=True)
         
         deci_type = res["Decision Type"]
         deci_type = deci_type.tolist()[0]
