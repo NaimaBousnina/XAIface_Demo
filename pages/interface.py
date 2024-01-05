@@ -152,7 +152,7 @@ with first_container:
         st.image(image)
 
     with col2:
-        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px;'>Face Verification Set Up</h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px;'>Face Verification Setup</h6>", unsafe_allow_html=True)
         recognition_tool = res["Face Verification Tool"]
         recognition_tool = recognition_tool.tolist()[0]
 
@@ -293,7 +293,7 @@ with second_container:
                 st.markdown(f"<h6 style='margin-top: 5px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#556B2F; border-radius: 5px 5px;'> Verification Decision </h6> <h6 style='margin-top: 5px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:White;font-size:18px; font-family: Sans-Serif; background-color:#808000; border-radius: 5px 5px; margin-right:40px;'>{coding_decision}</h6>", unsafe_allow_html=True)  
 
             with container_12:
-                st.markdown(f"<h6 style='margin-top: 5px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:black;font-size:18px; font-family: Sans-Serif; background-color:#FFDEAD; border-radius: 5px 5px;'> PSNR-YUV </h6> <h6 style='margin-top: 5px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:black;font-size:18px; font-family: Sans-Serif; background-color:#FFEBCD; border-radius: 5px 5px; margin-right:40px;'>{PSNR_YUV}</h6>", unsafe_allow_html=True)
+                st.markdown(f"<h6 style='margin-top: 5px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:black;font-size:18px; font-family: Sans-Serif; background-color:#FFDEAD; border-radius: 5px 5px;'> PSNR-YUV (dB) </h6> <h6 style='margin-top: 5px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:black;font-size:18px; font-family: Sans-Serif; background-color:#FFEBCD; border-radius: 5px 5px; margin-right:40px;'>{PSNR_YUV}</h6>", unsafe_allow_html=True)
             with container_13:
                 st.markdown(f"<h6 style='margin-top: 5px; text-align: center;float:left; margin-left: 40px; width: 210px; height: 40px; line-height: 40px; color:black;font-size:18px; font-family: Sans-Serif; background-color:#FFDEAD; border-radius: 5px 5px;'>  MS-SSIM </h6> <h6 style='margin-top: 5px; text-align: center; float:right;width: 120px; height: 40px; line-height: 40px; color:black;font-size:18px; font-family: Sans-Serif; background-color:#FFEBCD; border-radius: 5px 5px; margin-right:40px;'>{MS_SSIM}</h6>", unsafe_allow_html=True)      
 
@@ -307,7 +307,7 @@ with second_container:
 
     with col3:
 
-        st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Verification Explainability</h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Verification Explainability Heatmap</h6>", unsafe_allow_html=True)
         
         deci_type = res["Decision Type"]
         deci_type = deci_type.tolist()[0]
