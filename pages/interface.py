@@ -142,7 +142,7 @@ second_container = st.container()
 
 # Containers building
 with first_container:
-    col1, col2 = st.columns(2)
+    col1, col2, col3 = st.columns(2)
     with col1:
         st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Gallery Image</h6>", unsafe_allow_html=True)
         Gallery_img_path = res["Gallery_img_path"]
@@ -170,6 +170,15 @@ with first_container:
         with contain_3:
             st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 170px; width: 210px; height: 40px; line-height: 40px; color:white;font-size:18px; font-family: Sans-Serif; background-color:DarkBlue; border-radius: 5px 5px;'> Decision Threshold </h6> <h6 style='margin-top: 30px; text-align: center; float:right;width: 130px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:Aqua; border-radius: 5px 5px; margin-right:140px;'>{decision_thresh}</h6>", unsafe_allow_html=True)
 
+with col2:
+  st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Gallery Image</h6>", unsafe_allow_html=True)
+        Gallery_img_path = res["Gallery_img_path"]
+        Gallery_img_path = Gallery_img_path.tolist()[0]
+        image = Image.open(Gallery_img_path.strip('\"'))
+        image = image.resize((350, 350))
+        st.image(image)
+
+ 
 with second_container:
     col1, col2, col3 = st.columns(3)
 
