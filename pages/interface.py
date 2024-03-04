@@ -171,12 +171,14 @@ with first_container:
             st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 170px; width: 210px; height: 40px; line-height: 40px; color:white;font-size:18px; font-family: Sans-Serif; background-color:DarkBlue; border-radius: 5px 5px;'> Decision Threshold </h6> <h6 style='margin-top: 30px; text-align: center; float:right;width: 130px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:Aqua; border-radius: 5px 5px; margin-right:140px;'>{decision_thresh}</h6>", unsafe_allow_html=True)
 
     with col3:
-        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Gallery Image</h6>", unsafe_allow_html=True)
-        Gallery_img_path = res["Gallery_img_path"]
-        Gallery_img_path = Gallery_img_path.tolist()[0]
-        image = Image.open(Gallery_img_path.strip('\"'))
-        image = image.resize((350, 350))
-        st.image(image)
+        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Soft Biometrics </h6>", unsafe_allow_html=True)
+        contain_3_1 = st.container()
+        contain_3_2 = st.container()
+
+        with contain_3_1:
+            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -5px; background-color:#E0FFFF; border-radius: 10px 10px; height: 80px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Probe Image:</p></h6>", unsafe_allow_html=True)
+        with contain_3_2:
+            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -5px; background-color:#E0FFFF; border-radius: 10px 10px; height: 80px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Gallery Image:</p></h6>", unsafe_allow_html=True)
 
  
 with second_container:
@@ -271,9 +273,7 @@ with second_container:
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Please select the face coding tool</h5>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😊</h5>", unsafe_allow_html=True)
          
-       ####################################################################################################
-       #################################################### WE ARE HERE ###################################
-       ####################################################################################################
+     
             # if the image coding tool is selected
         if choise == "Face Coding" and select_coding != "Select": 
 
