@@ -176,7 +176,7 @@ with first_container:
         contain_3_2 = st.container()
 
         with contain_3_1:
-            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -60px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Probe Image:</p> <p style='margin-left: 20px;'>Gender:</p> <p style='margin-top: -10px; margin-left: 20px;'>Age:</p> <p style='margin-top: -10px; margin-left: 20px;'> Weight:</p> </h6>", unsafe_allow_html=True)
+            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -60px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Probe Image:</p> <p style='margin-left: 30px;'>Gender:</p> <p style='margin-top: -10px; margin-left: 30px;'>Age:</p> <p style='margin-top: -10px; margin-left: 30px;'> Weight:</p> </h6>", unsafe_allow_html=True)
 
         with contain_3_2:
             st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: 30px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Gallery Image:</p></h6>", unsafe_allow_html=True)
