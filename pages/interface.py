@@ -168,7 +168,7 @@ with first_container:
         with contain_1:
             st.markdown(f"<h6 style='margin-top: 60px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:white;font-size:18px; font-family: Sans-Serif; background-color:DarkBlue; border-radius: 5px 5px;'> Face Verification Tool </h6> <h6 style='margin-top: 60px; text-align: center; float:right;width: 130px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:Aqua; border-radius: 5px 5px; margin-right:50px;'>{recognition_tool}</h6>", unsafe_allow_html=True)
         with contain_3:
-            st.markdown(f"<h6 style='margin-top: 60px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:white;font-size:18px; font-family: Sans-Serif; background-color:DarkBlue; border-radius: 5px 5px;'> Decision Threshold </h6> <h6 style='margin-top: 30px; text-align: center; float:right;width: 130px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:Aqua; border-radius: 5px 5px; margin-right:50px;'>{decision_thresh}</h6>", unsafe_allow_html=True)
+            st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:white;font-size:18px; font-family: Sans-Serif; background-color:DarkBlue; border-radius: 5px 5px;'> Decision Threshold </h6> <h6 style='margin-top: 30px; text-align: center; float:right;width: 130px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:Aqua; border-radius: 5px 5px; margin-right:50px;'>{decision_thresh}</h6>", unsafe_allow_html=True)
 
     with col3:
         st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Soft Biometrics </h6>", unsafe_allow_html=True)
@@ -176,10 +176,10 @@ with first_container:
         contain_3_2 = st.container()
 
         with contain_3_1:
-            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -5px; background-color:#E0FFFF; border-radius: 10px 10px; height: 80px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Probe Image:</p> <p>Gender:</p> <p>Age:</p> <p> Weight:</p> </h6>", unsafe_allow_html=True)
+            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: 10px; background-color:#E0FFFF; border-radius: 10px 10px; height: 80px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Probe Image:</p> <p>Gender:</p> <p>Age:</p> <p> Weight:</p> </h6>", unsafe_allow_html=True)
 
         with contain_3_2:
-            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -5px; background-color:#E0FFFF; border-radius: 10px 10px; height: 80px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Gallery Image:</p></h6>", unsafe_allow_html=True)
+            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: 10px; background-color:#E0FFFF; border-radius: 10px 10px; height: 80px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Gallery Image:</p></h6>", unsafe_allow_html=True)
 
  
 with second_container:
