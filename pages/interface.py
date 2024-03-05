@@ -204,7 +204,7 @@ with first_container:
         coding_choix = coding_choix.tolist()[0]
 
 
-        if st.session_state['face beautification or face coding'] == "Select" or beauti_choix == "Select" or coding_choix == "Select":
+        if st.session_state['face beautification or face coding'] == "Select":
             
             with contain_3_1:
                 st.markdown(f"<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -60px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Probe Image:</p> <p style='margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Gender:   {probe_gender}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Age:  {probe_age}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'> Weight:  {probe_weight}</p></h6>", unsafe_allow_html=True)
@@ -221,6 +221,14 @@ with first_container:
                     
                 with contain_3_2:
                     st.markdown(f"<h6 style='margin-left: 20px; margin-right: 20px; margin-top: 30px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Gallery Image:</p> <p style='margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Gender:   {gallery_gender}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Age:  {gallery_age}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'> Weight:  {gallery_weight}</p></h6>", unsafe_allow_html=True)
+            else:
+                
+                with contain_3_1:
+                    st.markdown(f"<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -60px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Probe Image:</p> <p style='margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Gender:   {probe_gender}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Age:  {probe_age}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'> Weight:  {probe_weight}</p></h6>", unsafe_allow_html=True)
+                    
+                with contain_3_2:
+                    st.markdown(f"<h6 style='margin-left: 20px; margin-right: 20px; margin-top: 30px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Gallery Image:</p> <p style='margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Gender:   {gallery_gender}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Age:  {gallery_age}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'> Weight:  {gallery_weight}</p></h6>", unsafe_allow_html=True)
+
 
         if st.session_state['face beautification or face coding'] == "Face Beautification":
             
@@ -231,6 +239,14 @@ with first_container:
 
                 with contain_3_2:
                     st.markdown(f"<h6 style='margin-left: 20px; margin-right: 20px; margin-top: 30px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Filtered Gallery Image:</p> <p style='margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Gender:   {gallery_gender}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Age:  {gallery_age}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'> Weight:  {gallery_weight}</p></h6>", unsafe_allow_html=True)
+
+            else:
+                
+                with contain_3_1:
+                    st.markdown(f"<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -60px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Probe Image:</p> <p style='margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Gender:   {probe_gender}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Age:  {probe_age}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'> Weight:  {probe_weight}</p></h6>", unsafe_allow_html=True)
+                    
+                with contain_3_2:
+                    st.markdown(f"<h6 style='margin-left: 20px; margin-right: 20px; margin-top: 30px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Gallery Image:</p> <p style='margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Gender:   {gallery_gender}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Age:  {gallery_age}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'> Weight:  {gallery_weight}</p></h6>", unsafe_allow_html=True)
 
  
  
