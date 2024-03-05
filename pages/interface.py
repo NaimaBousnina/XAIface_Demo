@@ -174,11 +174,34 @@ with first_container:
 
     with col3:
         st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Soft Biometrics </h6>", unsafe_allow_html=True)
+       
+        probe_age = res["Probe Age"]
+        probe_age = probe_age.tolist()[0]
+
+        gallery_age = res["Gallery Age"]
+        gallery_age = gallery_age.tolist()[0]
+
+        probe_gender = res["Probe Gender"]
+        probe_gender = probe_gender.tolist()[0]
+
+        gallery_gender = res["Gallery Gender"]
+        gallery_gender = gallery_gender.tolist()[0]
+
+        probe_weight = res["Probe Weight"]
+        probe_weight = probe_weight.tolist()[0]
+
+        gallery_weight = res["Gallery Weight"]
+        gallery_weight = gallery_weight.tolist()[0]
+        
+
+
+
+
         contain_3_1 = st.container()
         contain_3_2 = st.container()
 
         with contain_3_1:
-            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -60px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Probe Image:</p> <p style='margin-left: 30px; font-size:18px;'>Gender:</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px;'>Age:</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px;'> Weight:</p> </h6>", unsafe_allow_html=True)
+            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -60px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Probe Image:</p> <p style='margin-left: 30px; font-size:18px;'>Gender: {comparison_type}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px;'>Age:</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px;'> Weight:</p> </h6>", unsafe_allow_html=True)
 
         with contain_3_2:
             st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: 30px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Probe Image:</p> <p style='margin-left: 30px; font-size:18px;'>Gender:</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px;'>Age:</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px;'> Weight:</p> </h6>", unsafe_allow_html=True)
