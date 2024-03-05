@@ -200,7 +200,7 @@ with first_container:
         beauti_choix= res["Face Beautification Tool"]
         beauti_choix = beauti_choix.tolist()[0]
 
-        coding_choix= res["Face Beautification Tool"]
+        coding_choix= res["Face Coding Tool"]
         coding_choix = coding_choix.tolist()[0]
 
 
