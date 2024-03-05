@@ -196,8 +196,6 @@ with first_container:
         contain_3_1 = st.container()
         contain_3_2 = st.container()
 
-        choix= res["Face Beautification or Face Coding"]
-        choix = choix.tolist()[0]
 
         beauti_choix= res["Face Beautification Tool"]
         beauti_choix = beauti_choix.tolist()[0]
@@ -216,7 +214,7 @@ with first_container:
 
         if st.session_state['face beautification or face coding'] == "Face Coding":
             
-            if coding_choix != "Select":
+            if coding_choix == "Select":
                 
                 with contain_3_1:
                     st.markdown(f"<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -60px; background-color:#E0FFFF; border-radius: 10px 10px; height: 140px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Decoded Probe Image:</p> <p style='margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Gender:   {probe_gender}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'>Age:  {probe_age}</p> <p style='margin-top: -10px; margin-left: 30px; font-size:18px; color: DarkBlue; font-weight: bold;'> Weight:  {probe_weight}</p></h6>", unsafe_allow_html=True)
