@@ -124,7 +124,9 @@ all_widgets = sp.create_widgets(df, create_data, ignore_columns=["Probe_img_path
                                                                  "Decision After Beautification", 
                                                                  "Decoded_probe_img_path", "Score After Coding",
                                                                  "Similar_region_HM_path", "Score After Beautification",
-                                                                 "Decision After Coding", "Decision Type", "PSNR-YUV", "MS-SSIM"], on_change=jarab)
+                                                                 "Decision After Coding", "Decision Type", "PSNR-YUV", "MS-SSIM", 
+                                                                 "Probe Age", "Gallery Age", "Probe Gender", "Gallery Gender", 
+                                                                 "Probe Weight", "Gallery Weight"], on_change=jarab)
 
 # Filter the dataframe according to the user's selections
 res = sp.filter_df(df, all_widgets)
