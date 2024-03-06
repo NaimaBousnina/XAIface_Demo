@@ -393,7 +393,7 @@ with second_container:
         container_10 = st.container()
         container_11 = st.container()
 
-        if st.session_state['Face Verification Explainability Tool'] == "LIBF (JRS)":
+        if st.session_state['face verification explainability tool'] == "LIBF (JRS)":
 
             with container_10:
                 st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Type of Decision </h6><h6 style='margin-top: 30px; text-align: center;float:right; margin-right: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> {deci_type} </h6>", unsafe_allow_html=True)
