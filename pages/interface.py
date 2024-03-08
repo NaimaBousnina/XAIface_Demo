@@ -399,7 +399,7 @@ with second_container:
         container_10 = st.container()
         container_11 = st.container()
 
-        if st.session_state['face verification explainability tool'] == "LIBF (JRS)" and st.session_state['probe-gallery pair id'] != "5" and st.session_state['face beautification tool'] != "Relax You Pretty":
+        if st.session_state['face verification explainability tool'] == "LIBF (JRS)":
 
             with container_10:
                 st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Type of Decision </h6><h6 style='margin-top: 30px; text-align: center;float:right; margin-right: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> {deci_type} </h6>", unsafe_allow_html=True)
@@ -413,7 +413,7 @@ with second_container:
             image = image.resize((450, 320))
             st.image(image) 
 
-        if st.session_state['face verification explainability tool'] != "LIBF (JRS)" and st.session_state['probe-gallery pair id'] != "5" and st.session_state['face beautification tool'] != "Relax You Pretty":
+        if st.session_state['face verification explainability tool'] != "LIBF (JRS)":
             
             with container_10:
                 
@@ -434,7 +434,8 @@ with second_container:
             image = Image.open(explai_img_path.strip('\"'))
             image = image.resize((350, 350))
             st.image(image)    
+
       
-        else:
+        else: st.session_state['probe-gallery pair id'] == "5" and  st.session_state['face beautification tool'] == "Relax You Pretty":
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Explainability heatmap is not generated due to face verification failure</h5>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😔</h5>", unsafe_allow_html=True)
