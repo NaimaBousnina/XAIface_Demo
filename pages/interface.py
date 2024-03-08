@@ -403,8 +403,7 @@ with second_container:
             explai_img_path = res["Similar_region_HM_path"]
             explai_img_path = explai_img_path.tolist()[0]
             image = Image.open(explai_img_path.strip('\"'))
-            #image = image.resize((380, 380))
-            image.thumbnail((380,380), Image.ANTIALIAS)
+            image = image.resize((round(image.size[0]*0.5), round(image.size[1]*0.5)))
             st.image(image) 
 
         else:
