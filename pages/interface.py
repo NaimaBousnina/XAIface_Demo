@@ -435,6 +435,6 @@ with second_container:
         Exception2 = res["Face Beautification Tool"]
         Exception2 = Exception2.tolist()[0]
 
-        if Exception1 == "5" and Exception2 == "Relax You Pretty":
+        if Exception1 == '"5"' and Exception2 == "Relax You Pretty":
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Explainability heatmap is not generated due to face verification failure</h5>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😔</h5>", unsafe_allow_html=True)
