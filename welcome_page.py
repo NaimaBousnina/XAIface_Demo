@@ -77,7 +77,7 @@ st.image(image)
 
 st.markdown("<h5 style='margin-left:45px; text-align: center;  color: red; font-size:30px; margin-top: 60px; margin-bottom: -10px; font-family: Sans-Serif; '>Please press F11 on your keyboard to enter the full screen mode</h5>", unsafe_allow_html=True)
 
-st.markdown("<h5 style='margin-left:45px; text-align: center;  color: black; font-size:20px; margin-top: 40px; margin-bottom: -50px; font-family: Sans-Serif; '>If the screen components are misplaced, please adjust the screen scaling to 100% or 125% </h5>", unsafe_allow_html=True)
+st.markdown("<h5 style='margin-left:45px; text-align: center;  color: black; font-size:20px; margin-top: 40px; margin-bottom: -70px; font-family: Sans-Serif; '>If the screen components are misplaced, please adjust the screen scaling to 100% or 125% </h5>", unsafe_allow_html=True)
 
 naima ="Start"
 strat_button = st.button(label=naima)
