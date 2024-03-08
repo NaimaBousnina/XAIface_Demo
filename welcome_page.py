@@ -69,7 +69,7 @@ div[data-testid="stMarkdownContainer"] p {
 </style>
 """, unsafe_allow_html = True)
 
-st.markdown("<h1 style='margin-left:45px;text-align: center;  color: Grey; font-size:54px; margin-top: 55px; font-family: Sans-Serif;'>Welcome to the XAIface Face Verification Explainability Demo</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='margin-left:45px;text-align: center;  color: Grey; font-size:54px; margin-top: 40px; font-family: Sans-Serif;'>Welcome to the XAIface Face Verification Explainability Demo</h1>", unsafe_allow_html=True)
 st.markdown("<h1 style='margin-top: 55px;'></h1>", unsafe_allow_html=True)
 image = Image.open("xaiface_logo_PNG.png")
 image = image.resize((500, 300))
