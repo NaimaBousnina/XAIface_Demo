@@ -404,6 +404,7 @@ with second_container:
             explai_img_path = explai_img_path.tolist()[0]
             image = Image.open(explai_img_path.strip('\"'))
             #image = image.resize((380, 380))
+            image.thumbnail((380,380), Image.ANTIALIAS)
             st.image(image) 
 
         else:
