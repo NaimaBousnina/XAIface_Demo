@@ -390,10 +390,16 @@ with second_container:
         deci_type = res["Decision Type"]
         deci_type = deci_type.tolist()[0]
 
+        Exception1 = res["Probe-gallery Pair ID"]
+        Exception1 = Exception1.tolist()[0]
+
+        Exception2 = res["Face Beautification Tool"]
+        Exception2 = Exception2.tolist()[0]
+
         container_10 = st.container()
         container_11 = st.container()
 
-        if st.session_state['face verification explainability tool'] == "LIBF (JRS)":
+        if st.session_state['face verification explainability tool'] == "LIBF (JRS)" and Exception1 != '"5"' and Exception2 != "Relax You Pretty"
 
             with container_10:
                 st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Type of Decision </h6><h6 style='margin-top: 30px; text-align: center;float:right; margin-right: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> {deci_type} </h6>", unsafe_allow_html=True)
@@ -407,7 +413,7 @@ with second_container:
             image = image.resize((450, 320))
             st.image(image) 
 
-        else:
+        if st.session_state['face verification explainability tool'] != "LIBF (JRS)" Exception1 != '"5"' and Exception2 != "Relax You Pretty"
             
             with container_10:
                 
@@ -429,12 +435,8 @@ with second_container:
             image = image.resize((350, 350))
             st.image(image)    
 
-        Exception1 = res["Probe-gallery Pair ID"]
-        Exception1 = Exception1.tolist()[0]
+      
 
-        Exception2 = res["Face Beautification Tool"]
-        Exception2 = Exception2.tolist()[0]
-
-        if Exception1 == '"5"' and Exception2 == "Relax You Pretty":
+        if :
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Explainability heatmap is not generated due to face verification failure</h5>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😔</h5>", unsafe_allow_html=True)
