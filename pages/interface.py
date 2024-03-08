@@ -146,7 +146,7 @@ second_container = st.container()
 with first_container:
     col1, col2, col3 = st.columns(3)
     with col1:
-        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Gallery Image</h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Gallery Image</h6>", unsafe_allow_html=True)
         Gallery_img_path = res["Gallery_img_path"]
         Gallery_img_path = Gallery_img_path.tolist()[0]
         image = Image.open(Gallery_img_path.strip('\"'))
