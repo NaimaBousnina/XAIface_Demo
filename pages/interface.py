@@ -434,8 +434,7 @@ with second_container:
             image = Image.open(explai_img_path.strip('\"'))
             image = image.resize((350, 350))
             st.image(image)    
-
       
-        elif st.session_state['probe-gallery pair id'] == "5" and  st.session_state['face beautification tool'] == "Relax You Pretty":
+        else:
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Explainability heatmap is not generated due to face verification failure</h5>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😔</h5>", unsafe_allow_html=True)
