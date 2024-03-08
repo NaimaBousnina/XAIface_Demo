@@ -154,7 +154,7 @@ with first_container:
         st.image(image)
 
     with col2:
-        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px;'>Face Verification Setup</h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px;'>Face Verification Setup</h6>", unsafe_allow_html=True)
         recognition_tool = res["Face Verification Tool"]
         recognition_tool = recognition_tool.tolist()[0]
 
@@ -173,7 +173,7 @@ with first_container:
             st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:white;font-size:18px; font-family: Sans-Serif; background-color:DarkBlue; border-radius: 5px 5px;'> Decision Threshold </h6> <h6 style='margin-top: 30px; text-align: center; float:right;width: 130px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:Aqua; border-radius: 5px 5px; margin-right:50px;'>{decision_thresh}</h6>", unsafe_allow_html=True)
 
     with col3:
-        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Soft Biometrics </h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Soft Biometrics </h6>", unsafe_allow_html=True)
        
         probe_age = res["Probe Age"]
         probe_age = probe_age.tolist()[0]
@@ -261,7 +261,7 @@ with second_container:
         ori_decision = res["Original Decision"]
         ori_decision = ori_decision.tolist()[0]
 
-        st.markdown("<h6 style='text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Probe Image</h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Probe Image</h6>", unsafe_allow_html=True)
         
         container_2 = st.container()
         container_4 = st.container()
@@ -297,21 +297,21 @@ with second_container:
         if choise == "Select":
 
 
-            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Beautification/Face Coding</h6>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Beautification/Face Coding</h6>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '>No face beautification or face coding is applied</h5>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😔</h5>", unsafe_allow_html=True)
         
         # if no beautification filter is selected
         if choise == "Face Beautification" and select_beautifi == "Select" : 
 
-            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Filtered Probe Image</h6>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Filtered Probe Image</h6>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Please select the face beautification tool</h5>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😊</h5>", unsafe_allow_html=True)
 
         # if a beautification filter is selected
         if choise == "Face Beautification" and select_beautifi != "Select" : 
 
-            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Filtered Probe Image</h6>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Filtered Probe Image</h6>", unsafe_allow_html=True)
 
             beauti_score = res["Score After Beautification"]
             beauti_score = beauti_score.tolist()[0]
@@ -338,7 +338,7 @@ with second_container:
         # If no image coding tool is selected
         if choise == "Face Coding" and select_coding == "Select": 
 
-            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Decoded Probe Image</h6>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Decoded Probe Image</h6>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Please select the face coding tool</h5>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😊</h5>", unsafe_allow_html=True)
          
@@ -352,7 +352,7 @@ with second_container:
             coding_decision = res["Decision After Coding"]
             coding_decision = coding_decision.tolist()[0]
 
-            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Decoded Probe Image </h6>", unsafe_allow_html=True)
+            st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Decoded Probe Image </h6>", unsafe_allow_html=True)
 
             PSNR_YUV = res["PSNR-YUV"]
             PSNR_YUV = PSNR_YUV.tolist()[0]
@@ -385,7 +385,7 @@ with second_container:
 
     with col3:
 
-        st.markdown("<h6 style='text-align: center; margin-left: 22px; margin-right: 22px; color: Black; font-size:20px; font-family: Sans-Serif; margin-top: -20px; background-color:Gainsboro; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Verification Explainability Heatmap</h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='text-align: center; margin-left: 22px; margin-right: 22px; color: Black; font-size:20px; font-family: Sans-Serif; margin-top: -20px; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Verification Explainability Heatmap</h6>", unsafe_allow_html=True)
         
         deci_type = res["Decision Type"]
         deci_type = deci_type.tolist()[0]
