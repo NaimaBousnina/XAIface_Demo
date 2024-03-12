@@ -436,6 +436,6 @@ with second_container:
             st.image(image)    
 
       
-        if st.session_state['face verification explainability tool'] != "LIBF (JRS)" and st.session_state['probe-gallery pair id'] == "5" and  st.session_state['face beautification tool'] == "Relax You Pretty":
+        if st.session_state['face verification explainability tool'] != "LIBF (JRS)" and st.session_state['probe-gallery pair id'] == "'5'" and  st.session_state['face beautification tool'] == "Relax You Pretty":
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Explainability heatmap is not generated due to face verification failure</h5>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😔</h5>", unsafe_allow_html=True)
