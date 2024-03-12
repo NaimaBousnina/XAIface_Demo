@@ -471,7 +471,41 @@ with second_container:
             image = image.resize((350, 350))
             st.image(image) 
     
+        if st.session_state['face verification explainability tool'] == "LIBF (JRS)" and st.session_state['probe-gallery pair id'] != '"5"' and  st.session_state['face beautification tool'] == "Relax You Pretty":
+            
+            with container_10:
+                st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Type of Decision </h6><h6 style='margin-top: 30px; text-align: center;float:right; margin-right: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> {deci_type} </h6>", unsafe_allow_html=True)
+                    
+            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: 5px; background-color:#E0FFFF; border-radius: 10px 10px; height: 90px; outline: 2px solid #AFEEEE;'><p style='margin-top: 8px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Colour coded magnitude of face patch correlations for gallery/probe image in face verification.</p></h6>", unsafe_allow_html=True)
+            st.markdown("<h3 style=' margin-top: 90px;'></h3>", unsafe_allow_html=True) #65px
+            explai_img_path = res["Similar_region_HM_path"]
+            explai_img_path = explai_img_path.tolist()[0]
+            image = Image.open(explai_img_path.strip('\"'))
+            #image = image.resize((round(image.size[0]*0.5), round(image.size[1]*0.5)))
+            image = image.resize((450, 320))
+            st.image(image) 
 
+        if st.session_state['face verification explainability tool'] != "LIBF (JRS)" and st.session_state['probe-gallery pair id'] != '"5"' and  st.session_state['face beautification tool'] == "Relax You Pretty":
+            
+            with container_10:
+                
+                st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Type of Decision </h6><h6 style='margin-top: 30px; text-align: center;float:right; margin-right: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> {deci_type} </h6>", unsafe_allow_html=True)
+            
+            with container_11:
+                
+                if deci_type == "True Positive" or deci_type == "False Positive":
+                    st.markdown(f"<h6 style='margin-top: 5px; text-align: center;float:left; margin-left: 30px; width: 180px; height: 40px; line-height: 40px; color:Black; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px; outline: 2px solid #0000FF;'> Similarity Map </h6><h6 style='margin-top: 5px; text-align: center;float:right; margin-right: 30px; width: 180px; height: 40px; line-height: 40px; color:#A9A9A9; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Dissimilarity Map </h6>", unsafe_allow_html=True)  
+                    
+                if deci_type == "True Negative" or deci_type == "False Negative":
+                    st.markdown(f"<h6 style='margin-top: 5px; text-align: center;float:left; margin-left: 30px; width: 180px; height: 40px; line-height: 40px; color:#A9A9A9; font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px;'> Similarity Map </h6><h6 style='margin-top: 5px; text-align: center;float:right; margin-right: 30px; width: 180px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:#87CEFA; border-radius: 5px 5px; outline: 2px solid #0000FF;'> Dissimilarity Map </h6>", unsafe_allow_html=True)  
+                    
+            st.markdown("<h6 style='margin-left: 20px; margin-right: 20px; margin-top: -5px; background-color:#E0FFFF; border-radius: 10px 10px; height: 80px; outline: 2px solid #AFEEEE;'><p style='margin-top: 10px; text-align: justify;margin-left: 15px; margin-right: 15px; font-size:21px; color: Black;'>Highlights the face regions contributing to the face verification decision.</p></h6>", unsafe_allow_html=True)
+            st.markdown("<h3 style=' margin-top: 55px;'></h3>", unsafe_allow_html=True)
+            explai_img_path = res["Similar_region_HM_path"]
+            explai_img_path = explai_img_path.tolist()[0]
+            image = Image.open(explai_img_path.strip('\"'))
+            image = image.resize((350, 350))
+            st.image(image)
       
         if st.session_state['probe-gallery pair id'] == '"5"' and  st.session_state['face beautification tool'] == "Relax You Pretty":
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Explainability heatmap is not generated due to face verification failure</h5>", unsafe_allow_html=True)
