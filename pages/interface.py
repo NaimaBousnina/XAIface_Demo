@@ -299,14 +299,14 @@ with second_container:
 
             st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Face Beautification/Face Coding</h6>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '>No face beautification or face coding is applied</h5>", unsafe_allow_html=True)
-            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😔</h5>", unsafe_allow_html=True)
+            #st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😔</h5>", unsafe_allow_html=True)
         
         # if no beautification filter is selected
         if choise == "Face Beautification" and select_beautifi == "Select" : 
 
             st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Filtered Probe Image</h6>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Please select the face beautification tool</h5>", unsafe_allow_html=True)
-            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😊</h5>", unsafe_allow_html=True)
+            #st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😊</h5>", unsafe_allow_html=True)
 
         # if a beautification filter is selected
         if choise == "Face Beautification" and select_beautifi != "Select" : 
@@ -340,7 +340,7 @@ with second_container:
 
             st.markdown("<h6 style='text-align: center; margin-left: 30px; margin-right: 30px; color: Black; font-size:21px; font-family: Sans-Serif; margin-top: -20px; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Decoded Probe Image</h6>", unsafe_allow_html=True)
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Please select the face coding tool</h5>", unsafe_allow_html=True)
-            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😊</h5>", unsafe_allow_html=True)
+            #st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😊</h5>", unsafe_allow_html=True)
          
      
             # if the image coding tool is selected
@@ -509,4 +509,4 @@ with second_container:
       
         if st.session_state['probe-gallery pair id'] == '"5"' and  st.session_state['face beautification tool'] == "Relax You Pretty":
             st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 220px; '> Explainability heatmap is not generated due to face verification failure</h5>", unsafe_allow_html=True)
-            st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😔</h5>", unsafe_allow_html=True)
+            #st.markdown("<h5 style='text-align: center; color: Black; font-size:24px; margin-top: 5px; '>😔</h5>", unsafe_allow_html=True)
