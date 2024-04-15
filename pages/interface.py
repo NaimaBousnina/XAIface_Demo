@@ -173,7 +173,7 @@ with first_container:
             st.markdown(f"<h6 style='margin-top: 30px; text-align: center;float:left; margin-left: 60px; width: 210px; height: 40px; line-height: 40px; color:white;font-size:18px; font-family: Sans-Serif; background-color:DarkBlue; border-radius: 5px 5px;'> Decision Threshold </h6> <h6 style='margin-top: 30px; text-align: center; float:right;width: 130px; height: 40px; line-height: 40px; color:Black;font-size:18px; font-family: Sans-Serif; background-color:Aqua; border-radius: 5px 5px; margin-right:50px;'>{decision_thresh}</h6>", unsafe_allow_html=True)
 
     with col3:
-        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Soft Biometrics </h6>", unsafe_allow_html=True)
+        st.markdown("<h6 style='margin-top: -130px; text-align: center; margin-left: 70px; margin-right: 70px; color: Black; font-size:21px; font-family: Sans-Serif; background-color:#FF5C5C; border-radius: 10px 10px; height: 50px; line-height: 50px; '>Soft Biometrics (EUR) </h6>", unsafe_allow_html=True)
        
         probe_age = res["Probe Age"]
         probe_age = probe_age.tolist()[0]
